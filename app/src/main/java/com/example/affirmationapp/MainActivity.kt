@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         //Initialize data
         val myDataset = Datasource().loadAffirmations()
+
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = ItemAdapter(this,myDataset)
 
